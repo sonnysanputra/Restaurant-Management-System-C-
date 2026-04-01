@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CB5AF2A5-9B44-4BBF-B751-692F89105B17}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CustomerDashboardForm</RootNamespace>
+    <AssemblyName>CustomerDashboardForm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CancelOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelOrder.Designer.cs">
+      <DependentUpon>CancelOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbackMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedbackMenu.Designer.cs">
+      <DependentUpon>FeedbackMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDashboardMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDashboardMenu.Designer.cs">
+      <DependentUpon>CustomerDashboardMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderMenu.Designer.cs">
+      <DependentUpon>OrderMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RefundStatusMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RefundStatusMenu.Designer.cs">
+      <DependentUpon>RefundStatusMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCustomerProlife.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCustomerProlife.Designer.cs">
+      <DependentUpon>UpdateCustomerProlife.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CancelOrder.resx">
+      <DependentUpon>CancelOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerDashboardMenu.resx">
+      <DependentUpon>CustomerDashboardMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedbackMenu.resx">
+      <DependentUpon>FeedbackMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderMenu.resx">
+      <DependentUpon>OrderMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RefundStatusMenu.resx">
+      <DependentUpon>RefundStatusMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCustomerProlife.resx">
+      <DependentUpon>UpdateCustomerProlife.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

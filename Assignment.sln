@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SedapMakanSystem", "SedapMakanSystem.csproj", "{E73FD37C-15AA-4277-8A84-6B352FF19C65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E73FD37C-15AA-4277-8A84-6B352FF19C65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E73FD37C-15AA-4277-8A84-6B352FF19C65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E73FD37C-15AA-4277-8A84-6B352FF19C65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E73FD37C-15AA-4277-8A84-6B352FF19C65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {48DA0EE2-A9AD-45E4-A887-750D9D4CB5A9}
+	EndGlobalSection
+EndGlobal
